@@ -8,7 +8,7 @@ Standardized and modularized configurations files (dotfiles) for setting up and 
 
 - [Aerospace](https://github.com/nikitabobko/AeroSpace) - A tiling window manager for macOS.
 - [Blender](https://github.com/blender/blender) - A 3D creation suite.
-- [Kitty](https://github.com/kovidgoyal/kitty) - A GPU-accelerated terminal emulator.
+- [Ghostty](https://ghostty.org) - A GPU-accelerated terminal emulator.
 - [MPV](https://github.com/mpv-player/mpv) - A media player.
 - [Neofetch](https://github.com/dylanaraps/neofetch) - A system information tool.
 - [Newsboat](https://github.com/newsboat/newsboat) - An RSS/Atom feed reader for the terminal.
