@@ -2,6 +2,24 @@
 
 function icon_map() {
   case "$1" in
+  "Activity Monitor")
+    icon_result=":activity_monitor:"
+    ;;
+  "ChatGPT")
+    icon_result=":openai:"
+    ;;
+  "Codex")
+    icon_result=":codex:"
+    ;;
+  "Ghostty")
+    icon_result=":ghostty:"
+    ;;
+  "Notion Calendar" | "Cron")
+    icon_result=":calendar:"
+    ;;
+  "Tailscale")
+    icon_result=":tailscale:"
+    ;;
   "Keynote" | "Keynote 讲演")
     icon_result=":keynote:"
     ;;
@@ -430,6 +448,8 @@ function icon_map() {
     ;;
   esac
 }
+
+[ "$1" = "--source-only" ] && return 0
 
 icon_map "$1"
 

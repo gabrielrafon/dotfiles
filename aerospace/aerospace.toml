@@ -95,3 +95,20 @@ f = ['layout floating tiling', 'mode main']
 
 # Close all windows except current
 backspace = ['close-all-windows-but-current', 'mode main']
+
+# Open new app windows on their designated workspaces.
+[[on-window-detected]]
+if.app-id = 'com.cron.electron'
+run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+if.app-id = 'com.todoist.mac.Todoist'
+run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+if.app-id = 'com.brave.Browser'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'md.obsidian'
+run = 'move-node-to-workspace 3'

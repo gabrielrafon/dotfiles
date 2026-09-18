@@ -1,7 +1,8 @@
 #!/bin/bash
 
-sketchybar --add item brew right \
-  --add event brew_update="$(brew update)" \
-  --set brew icon=$COUNT \
-  --set brew script=$PLUGIN_DIR/brew.sh \
-  --subscribe brew brew_update
+sketchybar --add event brew_update \
+  --add item brew right \
+  --set brew icon="􀐛" label="…" update_freq=1800 \
+  script="$PLUGIN_DIR/brew.sh" \
+  click_script="$PLUGIN_DIR/brew.sh" \
+  --subscribe brew brew_update system_woke
